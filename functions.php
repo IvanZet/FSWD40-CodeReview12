@@ -12,4 +12,17 @@ function wpb_theme_setup(){
 }
 add_action('after_setup_theme','wpb_theme_setup');
 
+//Widget locations
+function wpb_init_widgets($id) {
+	register_sidebar(array(
+		'name' => 'Sidebar',
+		'id' => 'sidebar',
+		'before_widget' => '<div class="widget category-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+	));
+}
+
+add_action('widgets_init', 'wpb_init_widgets');
 ?>

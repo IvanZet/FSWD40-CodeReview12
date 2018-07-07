@@ -1,3 +1,32 @@
+<!-- aside blog -->
+					<div id="aside" class="col-md-3">
+
+						<!-- category widget -->
+						<?php if (is_active_sidebar('sidebar')) : ?>
+            	<?php dynamic_sidebar('sidebar'); ?>
+          	<?php endif; ?>
+						<!-- /category widget -->
+					</div>
+					<!-- /aside blog -->
+
+					<!--Add classes to cattegory items-->
+					<script type="text/javascript">
+						var x = document.querySelectorAll(".category-widget a");
+				    var i;
+				    for (i = 0; i < x.length; i++) {
+				        x[i].setAttribute("class", "category");
+				    }
+					</script>
+
+				</div>
+				<!-- row -->
+
+			</div>
+			<!-- container -->
+
+		</div>
+		<!-- /Blog -->
+
 <!-- Footer -->
 <footer id="footer" class="section">
 

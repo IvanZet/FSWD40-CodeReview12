@@ -132,30 +132,4 @@
 					</div>
 					<!-- /main blog -->
 
-					<!-- aside blog -->
-					<div id="aside" class="col-md-3">
-
-						<!-- category widget -->
-						<div class="widget category-widget">
-							<h3>Categories</h3>
-							<a class="category" href="#">Web <span>12</span></a>
-							<a class="category" href="#">Css <span>5</span></a>
-							<a class="category" href="#">Wordpress <span>24</span></a>
-							<a class="category" href="#">Html <span>78</span></a>
-							<a class="category" href="#">Business <span>36</span></a>
-						</div>
-						<!-- /category widget -->
-
-					</div>
-					<!-- /aside blog -->
-
-				</div>
-				<!-- row -->
-
-			</div>
-			<!-- container -->
-
-		</div>
-		<!-- /Blog -->
-
 		<?php get_footer(); ?>
