@@ -12,11 +12,6 @@
 					<?php if(have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
 					<div class="col-md-10 col-md-offset-1 text-center">
-						<!-- <ul class="hero-area-tree">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li>How to Get Started in Photography</li>
-						</ul> -->
 						<h1 class="white-text"><?php the_title(); ?></h1>
 						<ul class="blog-post-meta">
 							<li class="blog-meta-author">By :
@@ -56,77 +51,6 @@
 						</div>
 						<!-- /blog post -->
 
-						<!-- blog comments -->
-						<div class="blog-comments">
-							<h3><?php comments_number(); ?> Comments</h3>
-
-							<!-- single comment -->
-							<div class="media">
-								<div class="media-left">
-									<img src="./img/avatar.png" alt="">
-								</div>
-								<div class="media-body">
-									<h4 class="media-heading">John Doe</h4>
-									<p>Cu his iudico appareat ullamcorper, at mea ignota nostrum. Nonumy argumentum id cum, eos adversarium contentiones id</p>
-									<div class="date-reply"><span>Oct 18, 2017 - 4:00AM</span><a href="#" class="reply">Reply</a></div>
-								</div>
-
-								<!-- comment reply -->
-								<div class="media">
-									<div class="media-left">
-										<img src="./img/avatar.png" alt="">
-									</div>
-									<div class="media-body">
-										<h4 class="media-heading">John Doe</h4>
-										<p>Cu his iudico appareat ullamcorper, at mea ignota nostrum. Nonumy argumentum id cum, eos adversarium contentiones id</p>
-										<div class="date-reply"><span>Oct 18, 2017 - 4:00AM</span><a href="#" class="reply">Reply</a></div>
-									</div>
-								</div>
-								<!-- /comment reply -->
-
-								<!-- comment reply -->
-								<div class="media">
-									<div class="media-left">
-										<img src="./img/avatar.png" alt="">
-									</div>
-									<div class="media-body">
-										<h4 class="media-heading">John Doe</h4>
-										<p>Cu his iudico appareat ullamcorper, at mea ignota nostrum. Nonumy argumentum id cum, eos adversarium contentiones id</p>
-										<div class="date-reply"><span>Oct 18, 2017 - 4:00AM</span><a href="#" class="reply">Reply</a></div>
-									</div>
-								</div>
-								<!-- /comment reply -->
-
-							</div>
-							<!-- /single comment -->
-
-							<!-- single comment -->
-							<div class="media">
-								<div class="media-left">
-									<img src="./img/avatar.png" alt="">
-								</div>
-								<div class="media-body">
-									<h4 class="media-heading">John Doe</h4>
-									<p>Cu his iudico appareat ullamcorper, at mea ignota nostrum. Nonumy argumentum id cum, eos adversarium contentiones id</p>
-									<div class="date-reply"><span>Oct 18, 2017 - 4:00AM</span><a href="#" class="reply">Reply</a></div>
-								</div>
-							</div>
-							<!-- /single comment -->
-
-							<!-- blog reply form -->
-							<div class="blog-reply-form">
-								<h3>Leave Comment</h3>
-								<form>
-									<input class="input name-input" type="text" name="name" placeholder="Name">
-									<input class="input email-input" type="email" name="email" placeholder="Email">
-									<textarea class="input" name="message" placeholder="Enter your Message"></textarea>
-									<button class="main-button icon-button">Submit</button>
-								</form>
-							</div>
-							<!-- /blog reply form -->
-
-						</div>
-						<!-- /blog comments -->
 						<?php endwhile; ?>
 						<?php endif; ?>
 					</div>
