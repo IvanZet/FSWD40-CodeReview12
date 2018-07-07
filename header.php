@@ -40,19 +40,27 @@
 
 				<!-- Navigation -->
 				<nav id="nav">
-					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Courses</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
+						<?php 
+						wp_nav_menu( array(
+							'theme_location'  => 'primary',
+							'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+							'container'       => 'div',
+							'container_class' => 'collapse navbar-collapse',
+							'container_id'    => 'bs-example-navbar-collapse-1',
+							'menu_class'      => 'navbar-nav mr-auto',
+							'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+							'walker'          => new WP_Bootstrap_Navwalker(),
+						));
+						?>
 				</nav>
 				<!-- /Navigation -->
+
+				<!--Update naviigation menu class-->
+				<script type="text/javascript">
+					document.getElementById("menu-main-menu").className = "navbar-nav mr-auto main-menu nav navbar-right";
+				</script>
+				<!--/Update naviigation menu class-->
 
 			</div>
 		</header>
 		<!-- /Header -->
-
-		<!-- Blog -->
-		<div id="blog" class="section">
